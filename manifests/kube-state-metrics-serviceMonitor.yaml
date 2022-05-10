@@ -12,7 +12,7 @@ spec:
   endpoints:
   - bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
     honorLabels: true
-    interval: 30s
+    interval: 60s
     port: https-main
     relabelings:
     - action: labeldrop
@@ -22,7 +22,7 @@ spec:
     tlsConfig:
       insecureSkipVerify: true
   - bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
-    interval: 30s
+    interval: 60s
     port: https-self
     scheme: https
     tlsConfig:
