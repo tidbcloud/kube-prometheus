@@ -24,6 +24,7 @@ spec:
         - --telemetry-host=127.0.0.1
         - --telemetry-port=8082
         - --metric-labels-allowlist=nodes=[*]
+        - --metric-annotations-allowlist=pods=[*]
         image: gcr.io/pingcap-public/coreos/kube-state-metrics:v1.9.5
         name: kube-state-metrics
         securityContext:
