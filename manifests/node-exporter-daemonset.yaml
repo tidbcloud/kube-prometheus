@@ -12,8 +12,6 @@ spec:
       app.kubernetes.io/name: node-exporter
   template:
     metadata:
-      annotations:
-        kubectl.kubernetes.io/default-container: node-exporter
       labels:
         app.kubernetes.io/name: node-exporter
         app.kubernetes.io/version: 1.8.2
