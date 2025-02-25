@@ -25,6 +25,7 @@ spec:
         - --no-collector.wifi
         - --no-collector.hwmon
         - --collector.filesystem.ignored-mount-points=^/(dev|proc|sys|var/lib/docker/.+|var/lib/kubelet/pods/.+)($|/)
+        - --collector.ethtool
         image: gcr.io/pingcap-public/prometheus/node-exporter:v0.18.1
         name: node-exporter
         resources:
